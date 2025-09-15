@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login & Features Page</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f0f4f8;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      position: relative;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      max-width: 1200px;
+      background: #fff;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+      position: relative;
+    }
+
+    /* Login Section */
+    .login-section {
+      flex: 1 1 50%;
+      padding: 40px 30px;
+      max-height: 90vh;
+      overflow-y: auto;
+      background: rgba(255, 255, 255, 0.95);
+    }
+
+    .login-section img {
+      width: 24px;
+      margin-bottom: 20px;
+    }
+
+    .login-section h2 {
+      color: #1D3A5F;
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .login-section p {
+      color: #2A5980;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .login-section label {
+      display: block;
+      margin-bottom: 5px;
+      color: #1D3A5F;
+      font-weight: bold;
+    }
+
+    .login-section select {
+      width: 100%;
+      padding: 12px 15px;
+      border-radius: 25px;
+      border: 1px solid #c0d4f0;
+      background: rgba(255,255,255,0.7);
+      margin-bottom: 20px;
+      font-size: 14px;
+      color: #1D3A5F;
+    }
+
+    .login-section input[type="checkbox"] {
+      accent-color: #3a86ff;
+    }
+
+    .login-section a {
+      color: #3a86ff;
+      text-decoration: none;
+      font-size: 12px;
+    }
+
+    .login-section a:hover {
+      text-decoration: underline;
+    }
+
+    .login-section button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 25px;
+      background: linear-gradient(to right, #3a86ff, #1c5ed6);
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .login-section button:hover {
+      opacity: 0.9;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+
+    .social-icons img {
+      width: 32px;
+      height: 32px;
+      cursor: pointer;
+    }
+
+    /* Logo Section */
+    .logo-section {
+      flex: 1 1 50%;
+      padding: 40px 30px;
+      background: url("banner.jpg") no-repeat center center/cover;
+      text-align: center;
+      max-height: 90vh;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo-section img {
+      height: 160px;
+      margin-bottom: 20px;
+    }
+
+    .logo-section h1 {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #1A2E45;
+    }
+
+    .logo-section h2 {
+      font-size: 22px;
+      font-weight: 600;
+      color: #28a745;
+      margin-bottom: 10px;
+    }
+
+    .logo-section p {
+      font-size: 14px;
+      color: #3b82f6;
+    }
+
+
+   
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Login Section -->
+    <div class="login-section" id="loginSection">
+      <div>
+        <img src="https://img.icons8.com/ios-filled/50/000000/horizontal-line.png"/>
+        <h2>NaviCamp</h2>
+        <p>Please enter your Start and End locations</p>
+      </div>
+      <form>
+        <label for="start">Start Location</label>
+    <select id="start">
+      <option value="13.2201951, 77.7541421">Main Gate 1</option>
+      <option value="13.2213743, 77.7551241">Main Gate 2</option>
+        <option value="13.2216727, 77.7549353">Flag post</option>
+        <option value="13.2221283, 77.7552384">Admin block 1</option>
+        <option value="13.2233225, 77.7559227">Admin block 2</option>
+        <option value="13.2233212, 77.7541116">Parents Stay Area</option>
+        <option value="13.2237132, 77.7572504">staff Quaters</option>
+        <option value="13.2247972, 77.7571941">Food court</option>
+        <option value="13.2245171, 77.7588691">Hostel 1</option>
+        <option value="13.228393, 77.757574">Sports Area</option>
+    </select>
+        
+    <label for="end">End Location</label>
+    <select id="end">
+      <option value="13.2201951, 77.7541421">Main Gate 1</option>
+      <option value="13.2213743, 77.7551241">Main Gate 2</option>
+        <option value="13.2216727, 77.7549353">Flag post</option>
+        <option value="13.2221283, 77.7552384">Admin block 1</option>
+        <option value="13.2233225, 77.7559227">Admin block 2</option>
+        <option value="13.2233212, 77.7541116">Parents Stay Area</option>
+        <option value="13.2237132, 77.7572504">staff Quaters</option>
+        <option value="13.2247972, 77.7571941">Food court</option>
+        <option value="13.2245171, 77.7588691">Hostel 1</option>
+        <option value="13.228393, 77.757574">Sports Area</option>
+
+    </select>
+
+        <button type="button" onclick="navigate()">Navigate</button>
+
+
+      </form>
+    </div>
+
+    <!-- Logo Section -->
+    <div class="logo-section" id="logoSection">
+    </div>
+
+  </div>
+
+  <script>
+        function navigate() {
+      const start = document.getElementById("start").value;
+      const end = document.getElementById("end").value;
+
+      if (start === end) {
+        alert("Start and End locations cannot be the same!");
+        return;
+      }
+
+      const url = `https://www.google.com/maps/dir/${start}/${end}`;
+      window.open(url, "_blank"); // open in new tab
+    }
+
+  </script>
+
+</body>
+</html>
